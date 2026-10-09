@@ -1,0 +1,27 @@
+{
+  "method": "ERMC",
+  "environment": "MiniGrid-KeyCorridorS3R3-v0",
+  "features": [
+    "phase-local semantic goals",
+    "held-key color binding for door goals",
+    "supported DIRECT value comparison",
+    "attainability prior",
+    "hold-after-hit adaptive budgets",
+    "phase-residual student outputs"
+  ],
+  "defaults": {
+    "total_training_steps": 2000000,
+    "color_goals": true,
+    "successful_final_event_only": true,
+    "residual_scale": 0.2,
+    "budget_min": 8,
+    "budget_max": 32,
+    "direct_budget": 32,
+    "feedback_alpha": 0.1,
+    "target_hit_rate": 0.7,
+    "auxiliary_first_hit": 0.005,
+    "auxiliary_episode_cap": 0.01,
+    "auxiliary_collection_mean_cap": 5e-05
+  },
+
+}
